@@ -120,6 +120,18 @@ git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="${LCYN}atilioa${LBLU}@${LGRN}mint${GRY}\[\033[00;32m\]\$(git_branch)\[\033[0;37m\]:\w\\$ "
+#\]\$(git_branch)\[\033[0;37m\]:\w\\$ "
 export PS1="${LCYN}atilioa${LBLU}@${LGRN}mint${GRN}\$(git_branch)${LGRY}:${LBLU}\w${LGRY}\\$ "
 # export PS1="[\u@\h \W]\$ "
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# virtualenvwrapper
+# Diretório onde os ambientes virtuais serão armazenados
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+
+# Adicionamos os comandos virtualenvwrapper no bash
+source /home/atilioa/.local/bin/virtualenvwrapper.sh
