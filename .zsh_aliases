@@ -15,6 +15,7 @@ alias githubrepogc='gc github.com/atilioa/repositories'
 alias python='python3.8'
 alias py='python3.8'
 alias cdgit='cd "/home/atilioa/Área de Trabalho/Git"'
+alias nemo='nemo . &'
 
 
 alias gitpullsub="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
