@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/atilioa/.config/autostart/bootstrap.sh
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[pt_BR]=Fix capslock delay
+Comment[pt_BR]=Fixes Linux capslock delay
+X-GNOME-Autostart-Delay=2
