@@ -141,10 +141,13 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # virtualenvwrapper
-# Diretório onde os ambientes virtuais serão armazenados
+# Directory where python venvs are stored
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
 
-# Adicionamos os comandos virtualenvwrapper no bash
+# Add virtualenvwrapper commands to bash
 source /home/atilioa/.local/bin/virtualenvwrapper.sh
+
+# Add marlin to bash
+source /home/atilioa/.local/bin/marlin.sh
 
