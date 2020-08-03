@@ -37,7 +37,9 @@
             "rhythmbox",
             "spotify",
             "io.github.celluloid_player.Celluloid",
-            "smplayer"
+            "smplayer",
+            "org.kde.gwenview",
+            "com.github.geigi.cozy"
         ]
     },
     "section2": {

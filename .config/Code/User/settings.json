@@ -1,0 +1,39 @@
+{
+    "workbench.colorTheme": "Andromeda Italic Bordered",
+    "editor.fontFamily": "'Iosevka SS08', 'Ubuntu Mono'",
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 89,
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 20,
+    "editor.fontLigatures": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.syntaxProfiles":{
+        "javascript": "jsx"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "git.confirmSync": false,
+    "[javascript]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+        }
+    },
+    "[javascriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+        }
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

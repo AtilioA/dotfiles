@@ -166,7 +166,7 @@
         "value": [
             "nemo.desktop",
             "org.gnome.Terminal.desktop",
-            "firefox.desktop"
+            "google-chrome.desktop"
         ]
     },
     "group-apps": {

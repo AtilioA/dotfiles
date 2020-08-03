@@ -252,14 +252,14 @@
         "dependency": "activate-on-hover",
         "description": "Menu hover delay",
         "tooltip": "Delay before the menu opens when hovered",
-        "value": 0
+        "value": 100.0
     },
     "enable-animation": {
         "type": "switch",
         "default": false,
         "description": "Use menu animations",
         "tooltip": "Allow the menu to animate on open and close",
-        "value": false
+        "value": true
     },
     "menu-editor-button": {
         "type": "button",

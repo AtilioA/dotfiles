@@ -16,7 +16,7 @@ alias python='python3.8'
 alias py='python3.8'
 alias cdgit='cd "/home/atilioa/Área de Trabalho/Git"'
 alias nemo='nemo . &'
-
+alias lendir='echo $((find . -maxdepth 3 -iname "*.mp4" -exec ffprobe -v quiet -of csv=p=0 -show_entries format=duration {} \; | paste -sd+ -| bc / 3600)) horas'
 
 alias gitpullsub="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
 alias gitpullsub2="find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull"

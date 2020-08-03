@@ -72,7 +72,9 @@
             "type": "section",
             "title": "Key Bindings",
             "keys": [
-                "keyToggle"
+                "keyToggle",
+                "keyBrightnessUp",
+                "keyBrightnessDown"
             ]
         },
         "location-section": {
@@ -136,7 +138,7 @@
             "Gamma": "gamma"
         },
         "tooltip": "Action when scroll on applet icon.",
-        "value": "bright"
+        "value": "disabled"
     },
     "iconLabel": {
         "type": "checkbox",
@@ -149,6 +151,18 @@
         "description": "On/Off",
         "default": "<Control>End",
         "value": "<Alt>End::"
+    },
+    "keyBrightnessUp": {
+        "type": "keybinding",
+        "description": "Increase brightness level",
+        "default": "<Alt>PageUp",
+        "value": "<Alt>Page_Up::"
+    },
+    "keyBrightnessDown": {
+        "type": "keybinding",
+        "description": "Decrease brightness level",
+        "default": "<Alt>PageDown",
+        "value": "<Alt>Page_Down::"
     },
     "dayTemp": {
         "type": "spinbutton",
@@ -168,7 +182,7 @@
         "units": "%",
         "step": 1,
         "description": "Brightness",
-        "value": 82
+        "value": 100
     },
     "gammaMix": {
         "type": "spinbutton",
@@ -195,7 +209,7 @@
         "units": "K",
         "step": 1,
         "description": "Temperature",
-        "value": 3600
+        "value": 3000
     },
     "nightBrightness": {
         "type": "spinbutton",
@@ -206,14 +220,14 @@
         "units": "%",
         "step": 1,
         "description": "Brightness",
-        "value": 82
+        "value": 100
     },
     "locationRemote": {
         "type": "checkbox",
         "default": true,
         "description": "Remote Location",
         "tooltip": "Native geoclue on redshift can make the experience slow.",
-        "value": true
+        "value": false
     },
     "locationUpdate": {
         "type": "button",
@@ -226,13 +240,13 @@
         "type": "entry",
         "default": "0",
         "description": "Latitude",
-        "value": "-20.1082"
+        "value": "-9.9565564"
     },
     "locationLongitude": {
         "type": "entry",
         "default": "0",
         "description": "Longitude",
-        "value": "-40.3019"
+        "value": "-67.8649033"
     },
     "aboutLocation": {
         "type": "label",
@@ -246,5 +260,5 @@
         "type": "label",
         "description": "If you like and use this applet take the time to visit it's page on Cinnamon Spices and give it a star. You only need a github account to do this."
     },
-    "__md5__": "171571bdb07daeba8c96a05e6cc95cfa"
+    "__md5__": "a9ed284e4d9227985653ec06f3988a17"
 }

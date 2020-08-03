@@ -151,3 +151,5 @@ source /home/atilioa/.local/bin/virtualenvwrapper.sh
 # Add marlin to bash
 source /home/atilioa/.local/bin/marlin.sh
 
+[[ -s /home/atilioa/.autojump/etc/profile.d/autojump.sh ]] && source /home/atilioa/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
