@@ -93,7 +93,7 @@
         "type": "checkbox",
         "default": false,
         "description": "Enabled",
-        "value": true
+        "value": false
     },
     "autoUpdate": {
         "type": "checkbox",
@@ -182,7 +182,7 @@
         "units": "%",
         "step": 1,
         "description": "Brightness",
-        "value": 100
+        "value": 90
     },
     "gammaMix": {
         "type": "spinbutton",
@@ -220,7 +220,7 @@
         "units": "%",
         "step": 1,
         "description": "Brightness",
-        "value": 100
+        "value": 90
     },
     "locationRemote": {
         "type": "checkbox",

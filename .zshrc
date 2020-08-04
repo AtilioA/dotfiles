@@ -148,8 +148,10 @@ export WORKON_HOME=$HOME/.virtualenvs
 # Add virtualenvwrapper commands to bash
 source /home/atilioa/.local/bin/virtualenvwrapper.sh
 
-# Add marlin to bash
-source /home/atilioa/.local/bin/marlin.sh
+# # Add marlin to bash
+# source /home/atilioa/.local/bin/marlin.sh
+# Add git completion
+source ~/.git-completion.sh
 
 [[ -s /home/atilioa/.autojump/etc/profile.d/autojump.sh ]] && source /home/atilioa/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
