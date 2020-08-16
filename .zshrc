@@ -69,6 +69,8 @@ ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+# plugins=(virtualenv)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,6 +105,7 @@ SPACESHIP_PROMPT_ORDER=(
   exec_time     # Execution time
   line_sep      # Line break
   char          # Prompt character
+  venv
 )
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
@@ -155,3 +158,4 @@ source ~/.git-completion.sh
 
 [[ -s /home/atilioa/.autojump/etc/profile.d/autojump.sh ]] && source /home/atilioa/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
+export VIRTUAL_ENV_DISABLE_PROMPT=1

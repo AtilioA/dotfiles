@@ -1,39 +1,62 @@
 {
-    "workbench.colorTheme": "Andromeda Italic Bordered",
-    "editor.fontFamily": "'Iosevka SS08', 'Ubuntu Mono'",
-    "editor.wordWrap": "on",
-    "editor.wordWrapColumn": 89,
-    "files.autoSave": "afterDelay",
-    "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 0,
-    "editor.fontSize": 20,
-    "editor.fontLigatures": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "emmet.syntaxProfiles":{
-        "javascript": "jsx"
-    },
-    "vsicons.dontShowNewVersionMessage": true,
-    "git.confirmSync": false,
-    "[javascript]": {
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-        }
-    },
-    "[javascriptreact]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-        }
-    },
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "git.autofetch": true,
-    "explorer.confirmDragAndDrop": false,
-    "git.enableSmartCommit": true,
-    "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Andromeda Italic Bordered",
+  "editor.fontFamily": "'Iosevka SS08', 'Ubuntu Mono'",
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 89,
+  "files.autoSave": "afterDelay",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0,
+  "editor.fontSize": 20,
+  "editor.fontLigatures": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "git.confirmSync": false,
+  "[javascript]": {
+    // "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+      "source.fixAll.eslint": true
     }
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescripot]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "explorer.confirmDelete": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "clockify.apiKey": "Xy1QMVXM5EtuLC6b",
+  "rainbow_csv.autodetect_separators": ["\t", ",", ";", "|", "^"],
+  "rainbow_csv.csv_lint_detect_trailing_spaces": true,
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "python.linting.pycodestyleArgs": ["--ignoreW503"],
+  "python.linting.pylamaArgs": ["--ignore=E402", "--ignore=E501"],
+  "python.linting.flake8Args": ["--ignore=W503, E501"],
+  "python.linting.pydocstyleArgs": ["--ignore=D100", "--ignore=D2"],
+  "python.formatting.autopep8Args": ["--max-line-length=100"],
+  "workbench.editor.labelFormat": "short",
+  "python.pythonPath": "/usr/bin/python3.8",
+  "python.formatting.provider": "black",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "files.insertFinalNewline": true
 }
