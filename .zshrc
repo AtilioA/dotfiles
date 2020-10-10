@@ -159,3 +159,7 @@ source ~/.git-completion.sh
 [[ -s /home/atilioa/.autojump/etc/profile.d/autojump.sh ]] && source /home/atilioa/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+export STARDOG_HOME=/var/stardog
+export PATH="$PATH:/media/atilioa/HDD/Wikidata2/stardog-7.4.0/bin"
+export STARDOG_HOME=/media/atilioa/HDD/Wikidata2;
+export STARDOG_JAVA_ARGS="-Xms5g -Xmx5g -XX:MaxDirectMemorySize=10g -Djava.io.tmpdir=/media/atilioa/HDD/Wikidata2/tmp";

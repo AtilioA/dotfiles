@@ -152,7 +152,8 @@ Net:
   IP address: 0.0.0.0
   DNS address: 8.8.8.8
   IP swap list: "ds-eu-c.scej-online.jp=206.189.232.242&&ds-eu-g.scej-online.jp=206.189.232.242&&c.demons-souls.com=206.189.232.242&&g.demons-souls.com=206.189.232.242&&cmnap.scej-online.jp=206.189.232.242&&demons-souls.scej-online.jp=206.189.232.242\n"
-  PSN status: RPCN
+  PSN status: Disconnected
+  NPID: ""
 Miscellaneous:
   Automatically start games after boot: true
   Exit RPCS3 when process finishes: false

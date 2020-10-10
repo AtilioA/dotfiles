@@ -353,13 +353,13 @@
         "type": "switch",
         "default": true,
         "description": "Enable",
-        "value": false
+        "value": true
     },
     "swap_override_graph_width": {
         "type": "switch",
         "default": false,
         "description": "Override graph width",
-        "value": false
+        "value": true
     },
     "swap_graph_width": {
         "type": "spinbutton",
@@ -370,7 +370,7 @@
         "description": "Graph width",
         "units": "pixels",
         "dependency": "swap_override_graph_width",
-        "value": 40
+        "value": 10.0
     },
     "swap_color_0": {
         "type": "colorchooser",
@@ -405,7 +405,7 @@
         "type": "colorchooser",
         "default": "rgb(138,226,52)",
         "description": "Download color",
-        "value": "rgb(138,226,52)"
+        "value": "rgb(114,159,207)"
     },
     "net_color_1": {
         "type": "colorchooser",
