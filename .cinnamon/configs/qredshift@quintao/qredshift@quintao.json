@@ -198,7 +198,7 @@
         "type": "checkbox",
         "default": false,
         "description": "Night Enabled",
-        "value": true
+        "value": false
     },
     "nightTemp": {
         "type": "spinbutton",

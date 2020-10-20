@@ -39,7 +39,8 @@
             "io.github.celluloid_player.Celluloid",
             "smplayer",
             "org.kde.gwenview",
-            "com.github.geigi.cozy"
+            "com.github.geigi.cozy",
+            "mps-youtube"
         ]
     },
     "section2": {
