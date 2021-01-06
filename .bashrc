@@ -132,8 +132,12 @@ export NVM_DIR="$HOME/.nvm"
 # Diretório onde os ambientes virtuais serão armazenados
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
-export STARDOG_HOME=/var/stardog
+
 export PATH="$PATH:home/atilioa/opt/apache-jena-3.16.0/bin"
 
 # Adicionamos os comandos virtualenvwrapper no bash
-source /home/atilioa/.local/bin/virtualenvwrapper.sh
+# source /home/atilioa/.local/bin/virtualenvwrapper.sh
+
+export PATH="$PATH:/home/atilioa/IC/Wikidata/stardog-7.4.5/bin"
+export STARDOG_HOME="/home/atilioa/IC/Wikidata"
+export STARDOG_JAVA_ARGS="-Xms8g -Xmx8g -XX:MaxDirectMemorySize=16g -Djava.io.tmpdir=/media/atilioa/HDD/Wikidata/tmp"

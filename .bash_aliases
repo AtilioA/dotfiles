@@ -21,7 +21,7 @@ alias gitpullsub2="find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 
 
 alias youtube-dlmp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0"
 
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 BLK='\[\033[0;30m\]'
 DGRY='\[\033[1;30m\]'
