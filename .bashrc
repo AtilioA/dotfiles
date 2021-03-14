@@ -138,6 +138,11 @@ export PATH="$PATH:home/atilioa/opt/apache-jena-3.16.0/bin"
 # Adicionamos os comandos virtualenvwrapper no bash
 # source /home/atilioa/.local/bin/virtualenvwrapper.sh
 
-export PATH="$PATH:/home/atilioa/IC/Wikidata/stardog-7.4.5/bin"
+# Stardog
+export PATH="$PATH:/home/atilioa/IC/Wikidata/stardog-7.4.0/bin"
 export STARDOG_HOME="/home/atilioa/IC/Wikidata"
-export STARDOG_JAVA_ARGS="-Xms8g -Xmx8g -XX:MaxDirectMemorySize=16g -Djava.io.tmpdir=/media/atilioa/HDD/Wikidata/tmp"
+export STARDOG_JAVA_ARGS="-Xms8g -Xmx8g -XX:MaxDirectMemorySize=16g -Djava.io.tmpdir=/home/atilioa/IC/Wikidata/tmp"
+
+# Autojump
+[[ -s /home/atilioa/.autojump/etc/profile.d/autojump.sh ]] && source /home/atilioa/.autojump/etc/profile.d/autojump.sh
+

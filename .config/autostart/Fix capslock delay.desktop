@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Exec=/home/atilioa/.config/autostart/bootstrap.sh
-X-GNOME-Autostart-enabled=true
+Exec=bash -ic "sh /home/atilioa/.config/autostart/bootstrap.sh"
+X-GNOME-Autostart-enabled=false
 NoDisplay=false
 Hidden=false
 Name[pt_BR]=Fix capslock delay

@@ -1,0 +1,4 @@
+.dotfiles
+.cache
+*.log
+*.png

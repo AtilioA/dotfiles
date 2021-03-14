@@ -8,7 +8,7 @@ export ZSH="/home/atilioa/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="afowler"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,7 +101,7 @@ SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
   host          # Hostname section
-  git           # Git section (git_branch + git_status)
+  git           # Git section
   exec_time     # Execution time
   line_sep      # Line break
   char          # Prompt character
@@ -149,7 +149,7 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
 
 # Add virtualenvwrapper commands to bash
-source /home/atilioa/.local/bin/virtualenvwrapper.sh
+# source /home/atilioa/.local/bin/virtualenvwrapper.sh
 
 # # Add marlin to bash
 # source /home/atilioa/.local/bin/marlin.sh
@@ -157,9 +157,11 @@ source /home/atilioa/.local/bin/virtualenvwrapper.sh
 source ~/.git-completion.sh
 
 [[ -s /home/atilioa/.autojump/etc/profile.d/autojump.sh ]] && source /home/atilioa/.autojump/etc/profile.d/autojump.sh
+
 autoload -U compinit && compinit -u
+
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-export PATH="$PATH:/media/atilioa/HDD/Wikidata/stardog-7.4.2/bin"
-export STARDOG_HOME=/media/atilioa/HDD/Wikidata;
-export STARDOG_JAVA_ARGS="-Xms5g -Xmx5g -XX:MaxDirectMemorySize=10g -Djava.io.tmpdir=/media/atilioa/HDD/Wikidata/tmp";
+export PATH="$PATH:/home/atilioa/Documentos/IC/Wikidata/stardog-7.4.0/bin"
+export STARDOG_HOME=/home/atilioa/Documentos/IC/Wikidata/;
+export STARDOG_JAVA_ARGS="-Xms14g -Xmx14g -XX:MaxDirectMemorySize=16g -Djava.io.tmpdir=/home/atilioa/Documentos/IC/Wikidata/tmp";
