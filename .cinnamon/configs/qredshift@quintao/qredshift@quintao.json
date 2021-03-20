@@ -142,7 +142,7 @@
             "Gamma": "gamma"
         },
         "tooltip": "Action when scroll on applet icon.",
-        "value": "disabled"
+        "value": "bright"
     },
     "iconLabel": {
         "type": "checkbox",
@@ -204,7 +204,7 @@
         "units": "%",
         "step": 1,
         "description": "Brightness",
-        "value": 91
+        "value": 100
     },
     "gammaMix": {
         "type": "spinbutton",
@@ -231,7 +231,7 @@
         "units": "K",
         "step": 1,
         "description": "Temperature",
-        "value": 2100
+        "value": 3000
     },
     "nightBrightness": {
         "type": "spinbutton",
@@ -242,7 +242,7 @@
         "units": "%",
         "step": 1,
         "description": "Brightness",
-        "value": 84
+        "value": 80
     },
     "locationRemote": {
         "type": "checkbox",
