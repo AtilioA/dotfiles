@@ -204,7 +204,7 @@
         "units": "%",
         "step": 1,
         "description": "Brightness",
-        "value": 100
+        "value": 90
     },
     "gammaMix": {
         "type": "spinbutton",
@@ -242,7 +242,7 @@
         "units": "%",
         "step": 1,
         "description": "Brightness",
-        "value": 80
+        "value": 65
     },
     "locationRemote": {
         "type": "checkbox",

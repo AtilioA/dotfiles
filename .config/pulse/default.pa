@@ -3,7 +3,7 @@
 # Create sinks and load rnnoise lib
 load-module module-null-sink sink_name=RNNoise_mic rate=48000
 load-module module-ladspa-sink sink_name=mic_raw_in sink_master=RNNoise_mic label=noise_suppressor_mono plugin=/home/atilioa/opt/ladspa/librnnoise_ladspa.so control=20
-load-module module-loopback source=alsa_input.pci-0000_09_00.4.analog-stereo sink=mic_raw_in channels=1 source_dont_move=true sink_dont_move=true
+load-module module-loopback source=alsa_input.pci-0000_09_00.4.analog-stereo sink=mic_raw_in channels=1 source_dont_move=true sink_dont_move=true latency_msec=1
 
 # Rename input devices
 update-source-proplist RNNoise_mic.monitor device.description='"RNNoise microphone"'
