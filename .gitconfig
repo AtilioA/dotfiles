@@ -1,7 +1,9 @@
 [user]
 	name = AtilioA
-	email = atiliodadalto@hotmail.com
-
+	email = atiliogpg@protonmail.com
+	signingkey = 3F6DA75A54331C33AD0C4EAFCB3F6E76DACFD5EC
+[commit]
+  gpgsign = true
 [alias]
   ci = commit
   co = checkout

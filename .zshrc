@@ -8,7 +8,7 @@ export ZSH="/home/atilioa/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="afowler"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -27,10 +27,10 @@ ZSH_THEME="afowler"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=10
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
@@ -105,7 +105,7 @@ SPACESHIP_PROMPT_ORDER=(
   exec_time     # Execution time
   line_sep      # Line break
   char          # Prompt character
-  venv
+  venv          # Python venv
 )
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
@@ -143,14 +143,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# virtualenvwrapper
-# Directory where python venvs are stored
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
-
-# Add virtualenvwrapper commands to bash
-# source /home/atilioa/.local/bin/virtualenvwrapper.sh
-
 # # Add marlin to bash
 # source /home/atilioa/.local/bin/marlin.sh
 # Add git completion
@@ -165,3 +157,12 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 export PATH="$PATH:/home/atilioa/Documentos/IC/Wikidata/stardog-7.4.0/bin"
 export STARDOG_HOME=/home/atilioa/Documentos/IC/Wikidata/;
 export STARDOG_JAVA_ARGS="-Xms14g -Xmx14g -XX:MaxDirectMemorySize=16g -Djava.io.tmpdir=/home/atilioa/Documentos/IC/Wikidata/tmp";
+
+# virtualenvwrapper
+# Directory where python venvs are stored
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+
+# Add virtualenvwrapper commands to bash
+source /home/atilioa/.local/bin/virtualenvwrapper_lazy.sh
+
