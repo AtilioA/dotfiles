@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Daybreak",
+  "workbench.colorTheme": "Solarized Dark",
   "editor.fontFamily": "'Iosevka SS08', 'Ubuntu Mono'",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 89,
@@ -88,5 +88,6 @@
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-  ]
+  ],
+  "tabnine.experimentalAutoImports": true
 }

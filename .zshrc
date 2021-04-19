@@ -68,8 +68,7 @@ export UPDATE_ZSH_DAYS=10
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-# plugins=(virtualenv)
+plugins=(git copybuffer virtualenvwrapper docker npx copydir copyfile)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
 source $ZSH/oh-my-zsh.sh
@@ -157,26 +156,9 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 export PATH="$PATH:/home/atilioa/Documentos/IC/Wikidata/stardog-7.4.0/bin"
 export STARDOG_HOME=/home/atilioa/Documentos/IC/Wikidata/;
 export STARDOG_JAVA_ARGS="-Xms14g -Xmx14g -XX:MaxDirectMemorySize=16g -Djava.io.tmpdir=/home/atilioa/Documentos/IC/Wikidata/tmp";
+export PATH="$PATH:/home/atilioa/Documentos/Mining/xmrig/build"
 
 # virtualenvwrapper
 # Directory where python venvs are stored
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
-
-# Add virtualenvwrapper commands to bash
-source /home/atilioa/.local/bin/virtualenvwrapper_lazy.sh
-
-## >>> conda initialize >>>
-## !! Contents within this block are managed by 'conda init' !!
-#__conda_setup="$('/home/atilioa/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-#else
-#    if [ -f "/home/atilioa/miniconda3/etc/profile.d/conda.sh" ]; then
-#        . "/home/atilioa/miniconda3/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/home/atilioa/miniconda3/bin:$PATH"
-#    fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<

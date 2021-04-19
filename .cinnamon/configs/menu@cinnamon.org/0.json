@@ -115,7 +115,7 @@
             }
         ],
         "default_category": "Linux Mint",
-        "value": "linuxmint-logo-ring-symbolic"
+        "value": "linuxmint-logo-filled-leaf-badge"
     },
     "menu-icon-size": {
         "type": "spinbutton",
@@ -186,7 +186,7 @@
         "description": "Applications icon size",
         "dependency": "show-application-icons",
         "indent": true,
-        "value": 22
+        "value": 22.0
     },
     "favbox-show": {
         "type": "switch",
