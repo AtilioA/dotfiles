@@ -162,3 +162,5 @@ export PATH="$PATH:/home/atilioa/Documentos/Mining/xmrig/build"
 # Directory where python venvs are stored
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
+
+export HISTTIMEFORMAT='%F | %T - '

@@ -1,8 +1,8 @@
-Threshold = 95
+Threshold = 75
 DisplayMonitorSources = true
 EnableUpdates = true
 GuiltTripped = true
 FilterInput = true
-FilterOutput = true
-LastUsedInput = "alsa_input.pci-0000_08_00.6.analog-stereo"
-LastUsedOutput = "alsa_output.pci-0000_08_00.6.analog-stereo"
+FilterOutput = false
+LastUsedInput = "alsa_output.pci-0000_09_00.4.analog-surround-21.monitor"
+LastUsedOutput = ""
