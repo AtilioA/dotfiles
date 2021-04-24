@@ -1,30 +1,31 @@
-#alias sudo='doas'
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias sudo='doas'
+alias suod='sudo'
 alias cd..='cd ..'
 alias ..='cd ..'
-
+alias rm='trash-put'
 alias la='ls -a'
 alias ls='ls -G'
 
 alias shutnow='sudo shutdown now'
-alias suod='sudo'
 
 alias tg='/opt/telegram/Telegram'
 alias gc='google-chrome'
-alias githubrepo='firefox github.com/atilioa/repositories'
-alias githubrepogc='gc github.com/atilioa/repositories'
+alias ff='firefox'
+alias br='brave-browser'
 alias python='python3.8'
 alias py='python3.8'
-alias cdgit='cd "/home/atilioa/Área de Trabalho/Git"'
+alias youtube-dlmp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0"
 alias nemo='nemo . &'
 alias lendir='echo $((find . -maxdepth 3 -iname "*.mp4" -exec ffprobe -v quiet -of csv=p=0 -show_entries format=duration {} \; | paste -sd+ -| bc / 3600)) horas'
 
+alias githubrepo='firefox github.com/atilioa/repositories'
+alias githubrepobr='br github.com/atilioa/repositories'
+alias cdgit='cd "/home/atilioa/Área de Trabalho/Git"'
 alias gitpullsub="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
 alias gitpullsub2="find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull"
 
-alias youtube-dlmp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0"
-
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+# alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 BLK='\[\033[0;30m\]'
 DGRY='\[\033[1;30m\]'

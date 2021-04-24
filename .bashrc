@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=500
+HISTFILESIZE=1000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -123,17 +123,17 @@ git_branch() {
 #\]\$(git_branch)\[\033[0;37m\]:\w\\$ "
 export PS1="${LCYN}atilioa${LBLU}@${LGRN}mint${GRN}\$(git_branch)${LGRY}:${LBLU}\w${LGRY}\\$ "
 # export PS1="[\u@\h \W]\$ "
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # virtualenvwrapper
 # Diretório onde os ambientes virtuais serão armazenados
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# export WORKON_HOME=$HOME/.virtualenvs
 
-export PATH="$PATH:home/atilioa/opt/apache-jena-3.16.0/bin"
+# export PATH="$PATH:home/atilioa/opt/apache-jena-3.16.0/bin"
 
 # Adicionamos os comandos virtualenvwrapper no bash
 # source /home/atilioa/.local/bin/virtualenvwrapper.sh
@@ -147,18 +147,18 @@ export STARDOG_JAVA_ARGS="-Xms8g -Xmx8g -XX:MaxDirectMemorySize=16g -Djava.io.tm
 [[ -s /home/atilioa/.autojump/etc/profile.d/autojump.sh ]] && source /home/atilioa/.autojump/etc/profile.d/autojump.sh
 
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/atilioa/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/atilioa/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/atilioa/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/atilioa/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# # >>> conda initialize >>>
+# # !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/home/atilioa/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/atilioa/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "/home/atilioa/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/atilioa/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# # <<< conda initialize <<<
 
