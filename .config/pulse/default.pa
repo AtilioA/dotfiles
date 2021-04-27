@@ -2,16 +2,16 @@
 
 # Create sinks and load rnnoise lib
 load-module module-null-sink sink_name=RNNoise_mic rate=48000
-load-module module-ladspa-sink sink_name=mic_raw_in sink_master=RNNoise_mic label=noise_suppressor_mono plugin=/home/atilioa/opt/ladspa/librnnoise_ladspa.so control=20
+load-module module-ladspa-sink sink_name=mic_raw_in sink_master=RNNoise_mic label=noise_suppressor_mono plugin=/home/atilioa/opt/ladspa/librnnoise_ladspa.so control=25
 load-module module-loopback source=alsa_input.pci-0000_09_00.4.analog-stereo sink=mic_raw_in channels=1 source_dont_move=true sink_dont_move=true latency_msec=1
 
 # Rename input devices
-update-source-proplist RNNoise_mic.monitor device.description='"RNNoise microphone"'
-update-source-proplist mic_raw_in.monitor device.description='"Monitor of LADSPA Plugin Noise Suppressor for Voice (Mono)"'
+update-source-proplist RNNoise_mic.monitor device.description='RNNoise microphone'
+update-source-proplist mic_raw_in.monitor device.description='Monitor of LADSPA Plugin Noise Suppressor for Voice (Mono)'
 
 # Rename output devices
-update-sink-proplist mic_raw_in device.description='"Loopback - Raw mic sink"'
-update-sink-proplist RNNoise_mic device.description='"Loopback - RNN mic sink"'
+update-sink-proplist mic_raw_in device.description='Loopback - Raw mic sink'
+update-sink-proplist RNNoise_mic device.description='Loopback - RNN mic sink'
 
 # Set RNNoise microphone as default microphone
 set-default-source RNNoise_mic.monitor
@@ -19,3 +19,12 @@ set-default-source RNNoise_mic.monitor
 # Create EARTE sink
 load-module module-null-sink sink_name=EARTE
 update-sink-proplist EARTE device.description=EARTE
+
+# Create RNNoise + System microphone
+# Create sink to receive loopbacks
+load-module module-null-sink sink_name=null_rnn_and_system_sink
+# Create loopbacks
+load-module module-loopback source=RNNoise_mic.monitor sink=null_rnn_and_system_sink channels=1 source_dont_move=true sink_dont_move=true
+load-module module-loopback source=alsa_output.pci-0000_09_00.4.analog-surround-21.monitor sink=null_rnn_and_system_sink channels=1 source_dont_move=true sink_dont_move=true
+
+update-source-proplist null_rnn_and_system_sink.monitor device.description='RNNoise + System'
